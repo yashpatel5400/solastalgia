@@ -1,2 +1,2 @@
-# workingtitle
-Working title is gonna be a bomb game about climate change
+# solastalgia
+Solastalgia is gonna be a bomb game about climate change
