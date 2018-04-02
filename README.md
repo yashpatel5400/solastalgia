@@ -7,10 +7,10 @@ Solastalgia is currently in its prototyping stages. The current layout of the sc
 
 Which correspond to these buildings and picking up these people:
 
-| Color: House type       | Description |
-| ----------------------- | ------------------------------------------------------------------------------------------------ |
-| Blue: Lower class house | Picking up food from a merchant for another client; you're good friends with this local merchant |
-| Purple: Business building/skyscraper | Delivering the food you just picked up from before; business guy needs to be dropped off at city hall for a meeting |
-| Red: City hall | Drop off business client and pick up politician; wants to go to the "projects"/lower class areas |
-| Yellow: Projects building | Show the politician around; wants to get dropped off at house after |
-| Pink: Upper class house | Drop off politician |
+| Color  | House type        | Description |
+| ------ | ----------------- | ------------------------------------------------------------------------------------------------ |
+| Blue   | Lower class house | Picking up food from a merchant for another client; you're good friends with this local merchant |
+| Purple | Business building/skyscraper | Delivering the food you just picked up from before; business guy needs to be dropped off at city hall for a meeting |
+| Red    | City hall | Drop off business client and pick up politician; wants to go to the "projects"/lower class areas |
+| Yellow | Projects building | Show the politician around; wants to get dropped off at house after |
+| Pink   | Upper class house | Drop off politician |
