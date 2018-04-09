@@ -1158,7 +1158,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 400002, guid: c8b9447b5cd42044883510d68d0bbdba, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -0.95
+      value: -0.14
       objectReference: {fileID: 0}
     - target: {fileID: 400002, guid: c8b9447b5cd42044883510d68d0bbdba, type: 3}
       propertyPath: m_LocalPosition.z
@@ -2964,7 +2964,7 @@ GameObject:
   - component: {fileID: 605462829}
   m_Layer: 0
   m_Name: RigidBodyFPSController
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -6701,8 +6701,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d68132d5ad5c5db4e9dbf6bfe9f9e3ce, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  translateSpeed: 5
-  rotateSpeed: 10
+  dragConstant: 0.25
+  boatCamera: {fileID: 1698963186}
+  firstPersonCamera: {fileID: 1200834490}
+  player: {fileID: 605462828}
 --- !u!4 &1469954009 stripped
 Transform:
   m_PrefabParentObject: {fileID: 400002, guid: c8b9447b5cd42044883510d68d0bbdba, type: 3}
@@ -6717,8 +6719,8 @@ BoxCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 2.9830322, y: 2.2893229, z: 12.154053}
-  m_Center: {x: 0.6012573, y: 1.2087541, z: 0.40142822}
+  m_Size: {x: 4.05896, y: 2.2893229, z: 12.154053}
+  m_Center: {x: 0.5321655, y: 1.2087541, z: 0.40142822}
 --- !u!1 &1475590829
 GameObject:
   m_ObjectHideFlags: 0
