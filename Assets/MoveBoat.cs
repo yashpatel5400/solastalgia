@@ -4,31 +4,89 @@ using UnityEngine;
 
 public class MoveBoat : MonoBehaviour {
 
-    public float translateSpeed = 1.0f;
-    public float rotateSpeed = 1.0f;
+    private const float MAX_SPEED = 15.0f;
+    public float dragConstant = .75f;
+
+    public Camera boatCamera;
+    public Camera firstPersonCamera;
+
+    private bool canEnterBoat;
+    private bool insideBoat;
+
+    private float linearSpeed;
+    private float rotationSpeed;
 
     // Use this for initialization
     void Start () {
-		
-	}
+        canEnterBoat = true;
+        insideBoat = false;
+
+        linearSpeed = 0.0f;
+        rotationSpeed = 0.0f;
+    }
 	
 	// Update is called once per frame
 	void Update () {
-        if (Input.GetKey(KeyCode.D))
-        {
-            transform.Rotate(new Vector3(0, rotateSpeed * Time.deltaTime, 0));
+        linearSpeed = Mathf.Min(Mathf.Abs(linearSpeed), MAX_SPEED) * Mathf.Sign(linearSpeed);
+        linearSpeed -= dragConstant * linearSpeed * Time.deltaTime;
+        transform.Translate(new Vector3(0, 0, linearSpeed) * Time.deltaTime);
+
+        rotationSpeed = Mathf.Min(Mathf.Abs(rotationSpeed), MAX_SPEED) * Mathf.Sign(rotationSpeed);
+        transform.Rotate(new Vector3(0, rotationSpeed, 0) * Time.deltaTime);
+        rotationSpeed -= dragConstant * rotationSpeed * Time.deltaTime;
+
+        if (insideBoat) { 
+            firstPersonCamera.enabled = false;
+            boatCamera.enabled = true;
+
+            if (Input.GetKey(KeyCode.D))
+            {
+                rotationSpeed += 1.0f;
+            }
+            if (Input.GetKey(KeyCode.A))
+            {
+                rotationSpeed -= 1.0f;
+            }
+            if (Input.GetKey(KeyCode.W))
+            {
+                linearSpeed += 1.0f;
+            }
+            if (Input.GetKey(KeyCode.S))
+            {
+                linearSpeed -= 1.0f;
+            }
+            if (Input.GetKey(KeyCode.Q))
+            {
+                insideBoat = false;
+            }
         }
-        if (Input.GetKey(KeyCode.A))
+
+        else
         {
-            transform.Rotate(new Vector3(0, -rotateSpeed * Time.deltaTime, 0));
+            firstPersonCamera.enabled = true;
+            boatCamera.enabled = false;
         }
-        if (Input.GetKey(KeyCode.S))
+
+        if (canEnterBoat && !insideBoat && Input.GetKey(KeyCode.E))
         {
-            transform.Translate(new Vector3(0, 0, -translateSpeed * Time.deltaTime));
+            insideBoat = true;
         }
-        if (Input.GetKey(KeyCode.W))
+
+    }
+
+    void OnTriggerEnter(Collider other)
+    {
+        if (other.CompareTag("Player"))
         {
-            transform.Translate(new Vector3(0, 0, translateSpeed * Time.deltaTime));
+            canEnterBoat = true;
+        }
+    }
+
+    void OnTriggerExit(Collider other)
+    {
+        if (other.CompareTag("Player"))
+        {
+            canEnterBoat = false;
         }
     }
 }
