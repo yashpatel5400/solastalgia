@@ -817,7 +817,7 @@ MeshRenderer:
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
   m_Materials:
-  - {fileID: 2100000, guid: 9993812483d413e4cb53ac722acec229, type: 2}
+  - {fileID: 2100000, guid: 1d9f3c2951a097a47b63bd689749249b, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -3018,22 +3018,18 @@ MonoBehaviour:
     RunKey: 304
     JumpForce: 50
     SlopeCurveModifier:
-      serializedVersion: 2
       m_Curve:
-      - serializedVersion: 2
-        time: -90
+      - time: -90
         value: 1
         inSlope: 0
         outSlope: 0
         tangentMode: 0
-      - serializedVersion: 2
-        time: 0
+      - time: 0
         value: 1
         inSlope: 0
         outSlope: 0
         tangentMode: 0
-      - serializedVersion: 2
-        time: 90
+      - time: 90
         value: 0
         inSlope: 0
         outSlope: 0
@@ -3042,6 +3038,7 @@ MonoBehaviour:
       m_PostInfinity: 2
       m_RotationOrder: 4
     CurrentTargetSpeed: 8
+    m_Running: 0
   mouseLook:
     XSensitivity: 2
     YSensitivity: 2
@@ -3051,12 +3048,23 @@ MonoBehaviour:
     smooth: 1
     smoothTime: 18
     lockCursor: 1
+    m_CharacterTargetRot: {x: 0, y: 0, z: 0, w: 0}
+    m_CameraTargetRot: {x: 0, y: 0, z: 0, w: 0}
+    m_cursorIsLocked: 1
   advancedSettings:
     groundCheckDistance: 0.1
     stickToGroundHelperDistance: 0.6
     slowDownRate: 20
     airControl: 0
     shellOffset: 0
+  m_RigidBody: {fileID: 0}
+  m_Capsule: {fileID: 0}
+  m_YRotation: 0
+  m_GroundContactNormal: {x: 0, y: 0, z: 0}
+  m_Jump: 0
+  m_PreviouslyGrounded: 0
+  m_Jumping: 0
+  m_IsGrounded: 0
 --- !u!136 &605462830
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -5506,34 +5514,28 @@ MonoBehaviour:
     HorizontalBobRange: 0.1
     VerticalBobRange: 0.05
     Bobcurve:
-      serializedVersion: 2
       m_Curve:
-      - serializedVersion: 2
-        time: 0
+      - time: 0
         value: 0
         inSlope: 0
         outSlope: 0
         tangentMode: 0
-      - serializedVersion: 2
-        time: 0.5
+      - time: 0.5
         value: 1
         inSlope: 0
         outSlope: 0
         tangentMode: 0
-      - serializedVersion: 2
-        time: 1
+      - time: 1
         value: 0
         inSlope: 0
         outSlope: 0
         tangentMode: 0
-      - serializedVersion: 2
-        time: 1.5
+      - time: 1.5
         value: -1
         inSlope: 0
         outSlope: 0
         tangentMode: 0
-      - serializedVersion: 2
-        time: 2
+      - time: 2
         value: 0
         inSlope: 0
         outSlope: 0
@@ -5542,12 +5544,20 @@ MonoBehaviour:
       m_PostInfinity: 2
       m_RotationOrder: 4
     VerticaltoHorizontalRatio: 2
+    m_CyclePositionX: 0
+    m_CyclePositionY: 0
+    m_BobBaseInterval: 0
+    m_OriginalCameraPosition: {x: 0, y: 0, z: 0}
+    m_Time: 0
   jumpAndLandingBob:
     BobDuration: 0.15
     BobAmount: 0.2
+    m_Offset: 0
   rigidbodyFirstPersonController: {fileID: 605462829}
   StrideInterval: 4
   RunningStrideLengthen: 0.722
+  m_PreviouslyGrounded: 0
+  m_OriginalCameraPosition: {x: 0, y: 0, z: 0}
 --- !u!81 &1200834492
 AudioListener:
   m_ObjectHideFlags: 0
