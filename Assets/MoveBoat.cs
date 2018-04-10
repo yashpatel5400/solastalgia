@@ -5,11 +5,12 @@ using UnityEngine;
 public class MoveBoat : MonoBehaviour {
 
     // vector added to "get out" of the vehicle somewhat naturally
-    private Vector3 GETTING_OUT = new Vector3(0.0f, 0.25f,0.0f);
+    private Vector3 GETTING_OUT = new Vector3(0.0f, 0.0f, 0.75f);
+    private Vector3 CAMERA_OFFSET = new Vector3(0.0f, 2.75f, 0.0f);
+
     private const float MAX_SPEED = 30.0f;
     public float dragConstant = .75f;
-
-    public Camera boatCamera;
+    
     public Camera firstPersonCamera;
     public GameObject player;
 
@@ -72,11 +73,10 @@ public class MoveBoat : MonoBehaviour {
         rotationSpeed -= dragConstant * rotationSpeed * Time.deltaTime;
 
         if (insideBoat) {
+            player.transform.position = transform.position + CAMERA_OFFSET;
+            firstPersonCamera.transform.position = transform.position + CAMERA_OFFSET;
             ShowEnterGUI = false;
             ShowExitGUI  = true;
-
-            firstPersonCamera.enabled = false;
-            boatCamera.enabled = true;
 
             acceleration = 1.0f;
             if (Input.GetKey(KeyCode.LeftShift))
@@ -102,15 +102,9 @@ public class MoveBoat : MonoBehaviour {
             }
             if (Input.GetKey(KeyCode.Q))
             {
-                player.transform.position = transform.position + GETTING_OUT;
+                player.transform.position += GETTING_OUT;
                 insideBoat = false;
             }
-        }
-
-        else
-        {
-            firstPersonCamera.enabled = true;
-            boatCamera.enabled = false;
         }
 
         if (canEnterBoat && !insideBoat)
