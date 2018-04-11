@@ -360,8 +360,8 @@ MonoBehaviour:
       onExecute:
         m_PersistentCalls:
           m_Calls: []
-        m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine, Version=0.0.0.0, Culture=neutral,
-          PublicKeyToken=null
+        m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
+          Culture=neutral, PublicKeyToken=null
       canvasRect:
         serializedVersion: 2
         x: 300
@@ -417,8 +417,8 @@ MonoBehaviour:
       onExecute:
         m_PersistentCalls:
           m_Calls: []
-        m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine, Version=0.0.0.0, Culture=neutral,
-          PublicKeyToken=null
+        m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
+          Culture=neutral, PublicKeyToken=null
       canvasRect:
         serializedVersion: 2
         x: 30
@@ -470,8 +470,8 @@ MonoBehaviour:
       onExecute:
         m_PersistentCalls:
           m_Calls: []
-        m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine, Version=0.0.0.0, Culture=neutral,
-          PublicKeyToken=null
+        m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
+          Culture=neutral, PublicKeyToken=null
       canvasRect:
         serializedVersion: 2
         x: 30
@@ -528,8 +528,8 @@ MonoBehaviour:
       onExecute:
         m_PersistentCalls:
           m_Calls: []
-        m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine, Version=0.0.0.0, Culture=neutral,
-          PublicKeyToken=null
+        m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
+          Culture=neutral, PublicKeyToken=null
       canvasRect:
         serializedVersion: 2
         x: 210
@@ -579,8 +579,8 @@ MonoBehaviour:
       onExecute:
         m_PersistentCalls:
           m_Calls: []
-        m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine, Version=0.0.0.0, Culture=neutral,
-          PublicKeyToken=null
+        m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
+          Culture=neutral, PublicKeyToken=null
       canvasRect:
         serializedVersion: 2
         x: 210
@@ -639,8 +639,8 @@ MonoBehaviour:
       onExecute:
         m_PersistentCalls:
           m_Calls: []
-        m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine, Version=0.0.0.0, Culture=neutral,
-          PublicKeyToken=null
+        m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
+          Culture=neutral, PublicKeyToken=null
       canvasRect:
         serializedVersion: 2
         x: 390
@@ -690,8 +690,8 @@ MonoBehaviour:
       onExecute:
         m_PersistentCalls:
           m_Calls: []
-        m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine, Version=0.0.0.0, Culture=neutral,
-          PublicKeyToken=null
+        m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
+          Culture=neutral, PublicKeyToken=null
       canvasRect:
         serializedVersion: 2
         x: 390
@@ -747,8 +747,8 @@ MonoBehaviour:
       onExecute:
         m_PersistentCalls:
           m_Calls: []
-        m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine, Version=0.0.0.0, Culture=neutral,
-          PublicKeyToken=null
+        m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
+          Culture=neutral, PublicKeyToken=null
       canvasRect:
         serializedVersion: 2
         x: 570
@@ -798,8 +798,8 @@ MonoBehaviour:
       onExecute:
         m_PersistentCalls:
           m_Calls: []
-        m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine, Version=0.0.0.0, Culture=neutral,
-          PublicKeyToken=null
+        m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
+          Culture=neutral, PublicKeyToken=null
       canvasRect:
         serializedVersion: 2
         x: 570
@@ -906,8 +906,8 @@ MonoBehaviour:
       onExecute:
         m_PersistentCalls:
           m_Calls: []
-        m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine, Version=0.0.0.0, Culture=neutral,
-          PublicKeyToken=null
+        m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
+          Culture=neutral, PublicKeyToken=null
       canvasRect:
         serializedVersion: 2
         x: 210
@@ -963,8 +963,8 @@ MonoBehaviour:
       onExecute:
         m_PersistentCalls:
           m_Calls: []
-        m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine, Version=0.0.0.0, Culture=neutral,
-          PublicKeyToken=null
+        m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
+          Culture=neutral, PublicKeyToken=null
       canvasRect:
         serializedVersion: 2
         x: 30
@@ -1016,8 +1016,8 @@ MonoBehaviour:
       onExecute:
         m_PersistentCalls:
           m_Calls: []
-        m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine, Version=0.0.0.0, Culture=neutral,
-          PublicKeyToken=null
+        m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
+          Culture=neutral, PublicKeyToken=null
       canvasRect:
         serializedVersion: 2
         x: 30
@@ -1073,8 +1073,8 @@ MonoBehaviour:
       onExecute:
         m_PersistentCalls:
           m_Calls: []
-        m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine, Version=0.0.0.0, Culture=neutral,
-          PublicKeyToken=null
+        m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
+          Culture=neutral, PublicKeyToken=null
       canvasRect:
         serializedVersion: 2
         x: 210
@@ -1124,8 +1124,8 @@ MonoBehaviour:
       onExecute:
         m_PersistentCalls:
           m_Calls: []
-        m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine, Version=0.0.0.0, Culture=neutral,
-          PublicKeyToken=null
+        m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
+          Culture=neutral, PublicKeyToken=null
       canvasRect:
         serializedVersion: 2
         x: 210
@@ -1181,8 +1181,8 @@ MonoBehaviour:
       onExecute:
         m_PersistentCalls:
           m_Calls: []
-        m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine, Version=0.0.0.0, Culture=neutral,
-          PublicKeyToken=null
+        m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
+          Culture=neutral, PublicKeyToken=null
       canvasRect:
         serializedVersion: 2
         x: 390
@@ -1232,8 +1232,8 @@ MonoBehaviour:
       onExecute:
         m_PersistentCalls:
           m_Calls: []
-        m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine, Version=0.0.0.0, Culture=neutral,
-          PublicKeyToken=null
+        m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
+          Culture=neutral, PublicKeyToken=null
       canvasRect:
         serializedVersion: 2
         x: 390
@@ -1255,11 +1255,11 @@ MonoBehaviour:
     - title: Actor
       value: 1
       type: 5
-      typeString: 
+      typeString: CustomFieldType_Actor
     - title: Conversant
       value: 4
       type: 5
-      typeString: 
+      typeString: CustomFieldType_Actor
     overrideSettings:
       useOverrides: 0
       overrideSubtitleSettings: 0
@@ -1346,12 +1346,12 @@ MonoBehaviour:
       onExecute:
         m_PersistentCalls:
           m_Calls: []
-        m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine, Version=0.0.0.0, Culture=neutral,
-          PublicKeyToken=null
+        m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
+          Culture=neutral, PublicKeyToken=null
       canvasRect:
         serializedVersion: 2
-        x: 300
-        y: 20
+        x: 372
+        y: 60
         width: 160
         height: 30
     - id: 1
@@ -1403,12 +1403,12 @@ MonoBehaviour:
       onExecute:
         m_PersistentCalls:
           m_Calls: []
-        m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine, Version=0.0.0.0, Culture=neutral,
-          PublicKeyToken=null
+        m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
+          Culture=neutral, PublicKeyToken=null
       canvasRect:
         serializedVersion: 2
-        x: 30
-        y: 70
+        x: 102
+        y: 110
         width: 160
         height: 30
     - id: 2
@@ -1458,12 +1458,12 @@ MonoBehaviour:
       onExecute:
         m_PersistentCalls:
           m_Calls: []
-        m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine, Version=0.0.0.0, Culture=neutral,
-          PublicKeyToken=null
+        m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
+          Culture=neutral, PublicKeyToken=null
       canvasRect:
         serializedVersion: 2
-        x: 60
-        y: 120
+        x: 132
+        y: 160
         width: 160
         height: 30
     - id: 3
@@ -1516,12 +1516,12 @@ MonoBehaviour:
       onExecute:
         m_PersistentCalls:
           m_Calls: []
-        m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine, Version=0.0.0.0, Culture=neutral,
-          PublicKeyToken=null
+        m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
+          Culture=neutral, PublicKeyToken=null
       canvasRect:
         serializedVersion: 2
-        x: 210
-        y: 70
+        x: 282
+        y: 110
         width: 160
         height: 30
     - id: 4
@@ -1567,12 +1567,12 @@ MonoBehaviour:
       onExecute:
         m_PersistentCalls:
           m_Calls: []
-        m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine, Version=0.0.0.0, Culture=neutral,
-          PublicKeyToken=null
+        m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
+          Culture=neutral, PublicKeyToken=null
       canvasRect:
         serializedVersion: 2
-        x: 300
-        y: 120
+        x: 372
+        y: 160
         width: 160
         height: 30
     - id: 5
@@ -1628,12 +1628,12 @@ MonoBehaviour:
       onExecute:
         m_PersistentCalls:
           m_Calls: []
-        m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine, Version=0.0.0.0, Culture=neutral,
-          PublicKeyToken=null
+        m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
+          Culture=neutral, PublicKeyToken=null
       canvasRect:
         serializedVersion: 2
-        x: 390
-        y: 70
+        x: 462
+        y: 110
         width: 160
         height: 30
     - id: 6
@@ -1679,12 +1679,12 @@ MonoBehaviour:
       onExecute:
         m_PersistentCalls:
           m_Calls: []
-        m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine, Version=0.0.0.0, Culture=neutral,
-          PublicKeyToken=null
+        m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
+          Culture=neutral, PublicKeyToken=null
       canvasRect:
         serializedVersion: 2
-        x: 540
-        y: 120
+        x: 612
+        y: 160
         width: 160
         height: 30
     - id: 7
@@ -1736,12 +1736,12 @@ MonoBehaviour:
       onExecute:
         m_PersistentCalls:
           m_Calls: []
-        m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine, Version=0.0.0.0, Culture=neutral,
-          PublicKeyToken=null
+        m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
+          Culture=neutral, PublicKeyToken=null
       canvasRect:
         serializedVersion: 2
-        x: 570
-        y: 70
+        x: 642
+        y: 110
         width: 160
         height: 30
     canvasScrollPosition: {x: 0, y: 0}
@@ -1838,8 +1838,8 @@ MonoBehaviour:
       onExecute:
         m_PersistentCalls:
           m_Calls: []
-        m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine, Version=0.0.0.0, Culture=neutral,
-          PublicKeyToken=null
+        m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
+          Culture=neutral, PublicKeyToken=null
       canvasRect:
         serializedVersion: 2
         x: 120
@@ -1896,8 +1896,8 @@ MonoBehaviour:
       onExecute:
         m_PersistentCalls:
           m_Calls: []
-        m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine, Version=0.0.0.0, Culture=neutral,
-          PublicKeyToken=null
+        m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
+          Culture=neutral, PublicKeyToken=null
       canvasRect:
         serializedVersion: 2
         x: 30
@@ -1947,8 +1947,8 @@ MonoBehaviour:
       onExecute:
         m_PersistentCalls:
           m_Calls: []
-        m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine, Version=0.0.0.0, Culture=neutral,
-          PublicKeyToken=null
+        m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
+          Culture=neutral, PublicKeyToken=null
       canvasRect:
         serializedVersion: 2
         x: 30
@@ -2005,8 +2005,8 @@ MonoBehaviour:
       onExecute:
         m_PersistentCalls:
           m_Calls: []
-        m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine, Version=0.0.0.0, Culture=neutral,
-          PublicKeyToken=null
+        m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
+          Culture=neutral, PublicKeyToken=null
       canvasRect:
         serializedVersion: 2
         x: 210
@@ -2062,8 +2062,8 @@ MonoBehaviour:
       onExecute:
         m_PersistentCalls:
           m_Calls: []
-        m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine, Version=0.0.0.0, Culture=neutral,
-          PublicKeyToken=null
+        m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
+          Culture=neutral, PublicKeyToken=null
       canvasRect:
         serializedVersion: 2
         x: 210
@@ -2119,8 +2119,8 @@ MonoBehaviour:
       onExecute:
         m_PersistentCalls:
           m_Calls: []
-        m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine, Version=0.0.0.0, Culture=neutral,
-          PublicKeyToken=null
+        m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
+          Culture=neutral, PublicKeyToken=null
       canvasRect:
         serializedVersion: 2
         x: 120
@@ -2172,8 +2172,8 @@ MonoBehaviour:
       onExecute:
         m_PersistentCalls:
           m_Calls: []
-        m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine, Version=0.0.0.0, Culture=neutral,
-          PublicKeyToken=null
+        m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
+          Culture=neutral, PublicKeyToken=null
       canvasRect:
         serializedVersion: 2
         x: 120
