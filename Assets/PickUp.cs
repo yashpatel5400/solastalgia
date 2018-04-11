@@ -4,16 +4,20 @@ using UnityEngine;
 
 public class PickUp : MonoBehaviour {
 
-    private Vector3 PASSENGER_OFFSET = new Vector3(-1.0f, 2.75f, 0.0f);
+    private Vector3 PASSENGER_OFFSET = new Vector3(-1.0f, 2.0f, 0.0f);
 
     private bool canPickUp;
+    private bool canDropOff;
     private bool pickedUp;
+
     private GameObject npc;
+    private GameObject dropOff;
 
     // Use this for initialization
     void Start () {
         canPickUp = false;
         npc = null;
+        dropOff = null;
     }
 	
 	// Update is called once per frame
@@ -29,6 +33,12 @@ public class PickUp : MonoBehaviour {
         if (pickedUp)
         {
             npc.transform.position = transform.position + PASSENGER_OFFSET;
+            if (canDropOff && dropOff != null && Input.GetKey(KeyCode.F))
+            {
+                npc.transform.position = dropOff.transform.position;
+                npc = null;
+                pickedUp = false;
+            }
         }
 	}
 
@@ -39,6 +49,11 @@ public class PickUp : MonoBehaviour {
             canPickUp = true;
             npc = other.gameObject;
         }
+        if (other.CompareTag("Objective"))
+        {
+            canDropOff = true;
+            dropOff = other.gameObject;
+        }
     }
 
     void OnTriggerExit(Collider other)
@@ -47,6 +62,11 @@ public class PickUp : MonoBehaviour {
         {
             canPickUp = false;
             npc = null;
+        }
+        if (other.CompareTag("Objective"))
+        {
+            canDropOff = false;
+            dropOff = null;
         }
     }
 }
