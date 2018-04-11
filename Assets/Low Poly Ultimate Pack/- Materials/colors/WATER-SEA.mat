@@ -81,15 +81,15 @@ Material:
     - _Mode: 2
     - _OcclusionStrength: 1
     - _Parallax: 0.02
-    - _ReflDistort: 0.071
+    - _ReflDistort: 0.8
     - _RefrDistort: 0.049
     - _SrcBlend: 5
     - _UVSec: 0
-    - _WaveScale: 0.035
+    - _WaveScale: 0.049
     - _ZWrite: 0
     m_Colors:
     - WaveSpeed: {r: -9, g: -4.5, b: 8, a: 3.5}
     - _Color: {r: 0.11580883, g: 0.875, b: 0.875, a: 0.778}
     - _EmissionColor: {r: 0, g: 0, b: 0, a: 1}
     - _HorizonColor: {r: 0.18393168, g: 0.33610398, b: 0.46323532, a: 1}
-    - _RefrColor: {r: 0.51362455, g: 0.69860405, b: 0.7352941, a: 1}
+    - _RefrColor: {r: 0.34969723, g: 0.4852941, b: 0.373076, a: 1}
