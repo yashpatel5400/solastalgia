@@ -79,7 +79,7 @@ MonoBehaviour:
     - title: Name
       value: Drop Businessman
       type: 0
-      typeString: 
+      typeString: CustomFieldType_Text
     - title: Pictures
       value: '[]'
       type: 3
@@ -87,19 +87,19 @@ MonoBehaviour:
     - title: Description
       value: Drop the businessman to Penn Station
       type: 0
-      typeString: 
+      typeString: CustomFieldType_Text
     - title: Success Description
       value: 
       type: 0
-      typeString: 
+      typeString: CustomFieldType_Text
     - title: Failure Description
       value: 
       type: 0
-      typeString: 
+      typeString: CustomFieldType_Text
     - title: State
       value: unassigned
       type: 0
-      typeString: 
+      typeString: CustomFieldType_QuestState
     - title: Is Item
       value: False
       type: 2
@@ -1067,9 +1067,7 @@ MonoBehaviour:
       conditionsString: 
       userScript: 'SetQuestState("Drop Businessman", "active");
 
-        SetQuestEntryState("Drop Businessman", 1, "active");
-
-        ShowAlert("Orders: Drop Businessman")'
+        SetQuestEntryState("Drop Businessman", 1, "active");'
       onExecute:
         m_PersistentCalls:
           m_Calls: []
@@ -1077,12 +1075,12 @@ MonoBehaviour:
           Culture=neutral, PublicKeyToken=null
       canvasRect:
         serializedVersion: 2
-        x: 28
+        x: 26.901093
         y: 321
         width: 160
         height: 30
-    canvasScrollPosition: {x: 0, y: 0}
-    canvasZoom: 1
+    canvasScrollPosition: {x: 51.23214, y: 54.18074}
+    canvasZoom: 0.9100001
   - id: 3
     fields:
     - title: Title
