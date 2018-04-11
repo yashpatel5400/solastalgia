@@ -5,10 +5,10 @@ GameObject:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  serializedVersion: 4
+  serializedVersion: 5
   m_Component:
-  - 4: {fileID: 400000}
-  - 114: {fileID: 11400000}
+  - component: {fileID: 400000}
+  - component: {fileID: 11400000}
   m_Layer: 0
   m_Name: Quest Title Label
   m_TagString: Untagged
@@ -21,10 +21,10 @@ GameObject:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  serializedVersion: 4
+  serializedVersion: 5
   m_Component:
-  - 4: {fileID: 400002}
-  - 114: {fileID: 11400002}
+  - component: {fileID: 400002}
+  - component: {fileID: 11400002}
   m_Layer: 0
   m_Name: Confirmation Message
   m_TagString: Untagged
@@ -37,10 +37,10 @@ GameObject:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  serializedVersion: 4
+  serializedVersion: 5
   m_Component:
-  - 4: {fileID: 400004}
-  - 114: {fileID: 11400004}
+  - component: {fileID: 400004}
+  - component: {fileID: 11400004}
   m_Layer: 0
   m_Name: Abandon Quest Popup
   m_TagString: Untagged
@@ -53,10 +53,10 @@ GameObject:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  serializedVersion: 4
+  serializedVersion: 5
   m_Component:
-  - 4: {fileID: 400006}
-  - 114: {fileID: 11400006}
+  - component: {fileID: 400006}
+  - component: {fileID: 11400006}
   m_Layer: 0
   m_Name: Abandon Button
   m_TagString: Untagged
@@ -69,10 +69,10 @@ GameObject:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  serializedVersion: 4
+  serializedVersion: 5
   m_Component:
-  - 4: {fileID: 400008}
-  - 114: {fileID: 11400008}
+  - component: {fileID: 400008}
+  - component: {fileID: 11400008}
   m_Layer: 0
   m_Name: Cancel Button
   m_TagString: Untagged
@@ -85,10 +85,10 @@ GameObject:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  serializedVersion: 4
+  serializedVersion: 5
   m_Component:
-  - 4: {fileID: 400010}
-  - 114: {fileID: 11400010}
+  - component: {fileID: 400010}
+  - component: {fileID: 11400010}
   m_Layer: 0
   m_Name: Close Button
   m_TagString: Untagged
@@ -101,10 +101,10 @@ GameObject:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  serializedVersion: 4
+  serializedVersion: 5
   m_Component:
-  - 4: {fileID: 400012}
-  - 114: {fileID: 11400012}
+  - component: {fileID: 400012}
+  - component: {fileID: 11400012}
   m_Layer: 0
   m_Name: Scroll View
   m_TagString: Untagged
@@ -117,10 +117,10 @@ GameObject:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  serializedVersion: 4
+  serializedVersion: 5
   m_Component:
-  - 4: {fileID: 400014}
-  - 114: {fileID: 11400014}
+  - component: {fileID: 400014}
+  - component: {fileID: 11400014}
   m_Layer: 0
   m_Name: Completed Button
   m_TagString: Untagged
@@ -133,10 +133,10 @@ GameObject:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  serializedVersion: 4
+  serializedVersion: 5
   m_Component:
-  - 4: {fileID: 400016}
-  - 114: {fileID: 11400016}
+  - component: {fileID: 400016}
+  - component: {fileID: 11400016}
   m_Layer: 0
   m_Name: Active Button
   m_TagString: Untagged
@@ -149,10 +149,10 @@ GameObject:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  serializedVersion: 4
+  serializedVersion: 5
   m_Component:
-  - 4: {fileID: 400018}
-  - 114: {fileID: 11400018}
+  - component: {fileID: 400018}
+  - component: {fileID: 11400018}
   m_Layer: 0
   m_Name: Window
   m_TagString: Untagged
@@ -165,10 +165,10 @@ GameObject:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  serializedVersion: 4
+  serializedVersion: 5
   m_Component:
-  - 4: {fileID: 400020}
-  - 114: {fileID: 11400020}
+  - component: {fileID: 400020}
+  - component: {fileID: 11400020}
   m_Layer: 0
   m_Name: GUIRoot
   m_TagString: Untagged
@@ -181,10 +181,10 @@ GameObject:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  serializedVersion: 4
+  serializedVersion: 5
   m_Component:
-  - 4: {fileID: 400022}
-  - 114: {fileID: 11400022}
+  - component: {fileID: 400022}
+  - component: {fileID: 11400022}
   m_Layer: 0
   m_Name: Default Unity GUI Quest Log Window
   m_TagString: Untagged
@@ -204,6 +204,7 @@ Transform:
   m_Children: []
   m_Father: {fileID: 400004}
   m_RootOrder: 3
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &400002
 Transform:
   m_ObjectHideFlags: 1
@@ -216,6 +217,7 @@ Transform:
   m_Children: []
   m_Father: {fileID: 400004}
   m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &400004
 Transform:
   m_ObjectHideFlags: 1
@@ -232,6 +234,7 @@ Transform:
   - {fileID: 400000}
   m_Father: {fileID: 400020}
   m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &400006
 Transform:
   m_ObjectHideFlags: 1
@@ -244,6 +247,7 @@ Transform:
   m_Children: []
   m_Father: {fileID: 400004}
   m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &400008
 Transform:
   m_ObjectHideFlags: 1
@@ -256,6 +260,7 @@ Transform:
   m_Children: []
   m_Father: {fileID: 400004}
   m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &400010
 Transform:
   m_ObjectHideFlags: 1
@@ -268,6 +273,7 @@ Transform:
   m_Children: []
   m_Father: {fileID: 400018}
   m_RootOrder: 3
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &400012
 Transform:
   m_ObjectHideFlags: 1
@@ -280,6 +286,7 @@ Transform:
   m_Children: []
   m_Father: {fileID: 400018}
   m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &400014
 Transform:
   m_ObjectHideFlags: 1
@@ -292,6 +299,7 @@ Transform:
   m_Children: []
   m_Father: {fileID: 400018}
   m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &400016
 Transform:
   m_ObjectHideFlags: 1
@@ -304,6 +312,7 @@ Transform:
   m_Children: []
   m_Father: {fileID: 400018}
   m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &400018
 Transform:
   m_ObjectHideFlags: 1
@@ -320,6 +329,7 @@ Transform:
   - {fileID: 400010}
   m_Father: {fileID: 400020}
   m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &400020
 Transform:
   m_ObjectHideFlags: 1
@@ -334,6 +344,7 @@ Transform:
   - {fileID: 400004}
   m_Father: {fileID: 400022}
   m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &400022
 Transform:
   m_ObjectHideFlags: 1
@@ -347,6 +358,7 @@ Transform:
   - {fileID: 400020}
   m_Father: {fileID: 0}
   m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &11400000
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -523,7 +535,7 @@ MonoBehaviour:
       value: 0
     width:
       scale: 1
-      value: .5
+      value: 0.5
     height:
       scale: 0
       value: 150
@@ -591,7 +603,7 @@ MonoBehaviour:
       value: 0
     width:
       scale: 1
-      value: .5
+      value: 0.5
     height:
       scale: 0
       value: 30
@@ -744,7 +756,7 @@ MonoBehaviour:
       value: 0
     width:
       scale: 1
-      value: .5
+      value: 0.5
     height:
       scale: 0
       value: 30
@@ -1118,7 +1130,7 @@ MonoBehaviour:
       value: 30
     width:
       scale: 1
-      value: .5
+      value: 0.5
     height:
       scale: 0
       value: 30
@@ -1271,7 +1283,7 @@ MonoBehaviour:
       value: 30
     width:
       scale: 1
-      value: .5
+      value: 0.5
     height:
       scale: 0
       value: 30
@@ -1315,7 +1327,7 @@ MonoBehaviour:
   localizedText: {fileID: 0}
   text: Active
   guiStyleName: 
-  clickable: 1
+  clickable: 0
   disabled:
     pixelRect:
       serializedVersion: 2
@@ -1424,10 +1436,10 @@ MonoBehaviour:
       value: 0
     width:
       scale: 1
-      value: .75
+      value: 0.75
     height:
       scale: 1
-      value: .75
+      value: 0.75
     minPixelWidth: 0
     minPixelHeight: 0
   autoSize:
@@ -1550,6 +1562,7 @@ MonoBehaviour:
   abandonQuestState: 1
   pauseWhileOpen: 1
   unlockCursorWhileOpen: 1
+  useGroups: 0
   guiRoot: {fileID: 11400020}
   scrollView: {fileID: 11400012}
   activeButton: {fileID: 11400016}
@@ -1559,6 +1572,7 @@ MonoBehaviour:
     questTitleLabel: {fileID: 11400000}
     ok: {fileID: 11400006}
     cancel: {fileID: 11400008}
+  groupHeadingGuiStyleName: 
   questHeadingGuiStyleName: 
   questHeadingOpenGuiStyleName: 
   questBodyGuiStyleName: 
@@ -1579,4 +1593,3 @@ Prefab:
   m_ParentPrefab: {fileID: 0}
   m_RootGameObject: {fileID: 100022}
   m_IsPrefabParent: 1
-  m_IsExploded: 1
