@@ -23,6 +23,8 @@ public class MoveBoat : MonoBehaviour {
 
     private bool ShowEnterGUI;
     private bool ShowExitGUI;
+
+	public float baseAcell = 1f;
     
     // Use this for initialization
     void Start () {
@@ -34,7 +36,7 @@ public class MoveBoat : MonoBehaviour {
 
         linearSpeed = 0.0f;
         rotationSpeed = 0.0f;
-        acceleration = 1.0f;
+		acceleration = baseAcell;
     }
 
     void OnGUI()
@@ -78,10 +80,10 @@ public class MoveBoat : MonoBehaviour {
             ShowEnterGUI = false;
             ShowExitGUI  = true;
 
-            acceleration = 1.0f;
+			acceleration = baseAcell;
             if (Input.GetKey(KeyCode.LeftShift))
             {
-                acceleration = 2.0f;
+				acceleration = baseAcell;
             }
 
             if (Input.GetKey(KeyCode.D))
