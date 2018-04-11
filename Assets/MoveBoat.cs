@@ -21,47 +21,16 @@ public class MoveBoat : MonoBehaviour {
     private float rotationSpeed;
     private float acceleration;
 
-    private bool ShowEnterGUI;
-    private bool ShowExitGUI;
-
 	public float baseAcell = 1f;
     
     // Use this for initialization
     void Start () {
-        canEnterBoat = true;
+        canEnterBoat = false;
         insideBoat = false;
-
-        ShowEnterGUI = false;
-        ShowExitGUI = false;
-
+        
         linearSpeed = 0.0f;
         rotationSpeed = 0.0f;
 		acceleration = baseAcell;
-    }
-
-    void OnGUI()
-    {
-        var centeredStyle = GUI.skin.GetStyle("Label");
-        centeredStyle.alignment = TextAnchor.UpperCenter;
-
-        if (ShowEnterGUI)
-        {
-            GUI.Label(new Rect(Screen.width / 2 - 50, Screen.height / 2 - 25, 100, 50),
-                "Press E to Enter", centeredStyle);
-        }
-
-        else if (ShowExitGUI)
-        {
-            GUI.Label(new Rect(Screen.width / 2 - 50, Screen.height / 2 - 25, 100, 50),
-                "Press Q to Exit", centeredStyle);
-        }
-
-        else
-        {
-            GUI.Label(new Rect(Screen.width / 2 - 50, Screen.height / 2 - 25, 100, 50),
-                "", centeredStyle);
-        }
-
     }
 
     // Update is called once per frame
@@ -77,9 +46,7 @@ public class MoveBoat : MonoBehaviour {
         if (insideBoat) {
             player.transform.position = transform.position + CAMERA_OFFSET;
             firstPersonCamera.transform.position = transform.position + CAMERA_OFFSET;
-            ShowEnterGUI = false;
-            ShowExitGUI  = true;
-
+            
 			acceleration = baseAcell;
             if (Input.GetKey(KeyCode.LeftShift))
             {
@@ -121,8 +88,6 @@ public class MoveBoat : MonoBehaviour {
 
     void OnTriggerEnter(Collider other)
     {
-        ShowEnterGUI = true;
-        ShowExitGUI = false;
         if (other.CompareTag("Player"))
         {
             canEnterBoat = true;
@@ -133,8 +98,6 @@ public class MoveBoat : MonoBehaviour {
     {
         if (other.CompareTag("Player"))
         {
-            ShowEnterGUI = false;
-            ShowExitGUI = false;
             canEnterBoat = false;
         }
     }
