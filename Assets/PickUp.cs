@@ -4,7 +4,10 @@ using UnityEngine;
 
 public class PickUp : MonoBehaviour {
 
+    private Vector3 PASSENGER_OFFSET = new Vector3(-1.0f, 2.75f, 0.0f);
+
     private bool canPickUp;
+    private bool pickedUp;
     private GameObject npc;
 
     // Use this for initialization
@@ -19,14 +22,18 @@ public class PickUp : MonoBehaviour {
         {
             if (Input.GetKey(KeyCode.F))
             {
-                npc.transform.position = transform.position;
+                pickedUp = true;
             }
+        }
+
+        if (pickedUp)
+        {
+            npc.transform.position = transform.position + PASSENGER_OFFSET;
         }
 	}
 
     void OnTriggerEnter(Collider other)
     {
-        Debug.Log(other.tag);
         if (other.CompareTag("NPC"))
         {
             canPickUp = true;
