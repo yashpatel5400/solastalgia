@@ -3,6 +3,11 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class MoveBoat : MonoBehaviour {
+    public float amplitude = 0.125f;
+    public float frequency = 1f;
+
+    // Position Storage Variables
+    Vector3 tempPos = new Vector3();
 
     // vector added to "get out" of the vehicle somewhat naturally
     private Vector3 GETTING_OUT = new Vector3(0.0f, 0.0f, 0.75f);
@@ -35,6 +40,11 @@ public class MoveBoat : MonoBehaviour {
 
     // Update is called once per frame
     void Update () {
+        tempPos = transform.position;
+        tempPos.y += Mathf.Sin(Time.fixedTime * Mathf.PI * frequency) * amplitude;
+
+        // transform.position = tempPos;
+
         linearSpeed = Mathf.Min(Mathf.Abs(linearSpeed), MAX_SPEED) * Mathf.Sign(linearSpeed);
         linearSpeed -= dragConstant * linearSpeed * Time.deltaTime;
         transform.Translate(new Vector3(0, 0, linearSpeed) * Time.deltaTime);
