@@ -11,13 +11,14 @@ public class MoveBoat : MonoBehaviour {
 
     // vector added to "get out" of the vehicle somewhat naturally
     private Vector3 GETTING_OUT = new Vector3(0.0f, 0.0f, 0.75f);
-    private Vector3 CAMERA_OFFSET = new Vector3(0.0f, 2.75f, 0.0f);
+    private Vector3 CAMERA_OFFSET = new Vector3(0.0f, 1.75f, 0.0f);
 
     private const float MAX_SPEED = 30.0f;
     public float dragConstant = .75f;
     
     public Camera firstPersonCamera;
     public GameObject player;
+    public GameObject driverSeat;
 
     private bool canEnterBoat;
     private bool insideBoat;
@@ -54,8 +55,8 @@ public class MoveBoat : MonoBehaviour {
         rotationSpeed -= dragConstant * rotationSpeed * Time.deltaTime;
 
         if (insideBoat) {
-            player.transform.position = transform.position + CAMERA_OFFSET;
-            firstPersonCamera.transform.position = transform.position + CAMERA_OFFSET;
+            player.transform.position = driverSeat.transform.position;
+            firstPersonCamera.transform.position = driverSeat.transform.position + CAMERA_OFFSET;
             
 			acceleration = baseAcell;
             if (Input.GetKey(KeyCode.LeftShift))

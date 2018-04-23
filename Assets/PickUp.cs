@@ -5,6 +5,7 @@ using UnityEngine;
 public class PickUp : MonoBehaviour {
 
     public GameObject passengerSeat;
+    public GameObject pickupObjective;
     public GameObject objective;
 
     private Vector3 PASSENGER_OFFSET = new Vector3(-1.0f, 2.0f, 0.0f);
@@ -26,7 +27,7 @@ public class PickUp : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-		if (canPickUp && npc != null)
+        if (canPickUp && npc != null)
         {
             if (Input.GetKey(KeyCode.F))
             {
@@ -37,10 +38,12 @@ public class PickUp : MonoBehaviour {
         if (pickedUp)
         {
             objective.GetComponent<Renderer>().enabled = true;
+            pickupObjective.GetComponent<Renderer>().enabled = false;
             npc.transform.rotation = transform.rotation;
             npc.transform.position = passengerSeat.transform.position;
             if (canDropOff && dropOff != null && Input.GetKey(KeyCode.F))
             {
+                objective.GetComponent<Renderer>().enabled = false;
                 npc.transform.position = transform.position + DROPOFF_OFFSET;
                 npc = null;
                 pickedUp = false;
