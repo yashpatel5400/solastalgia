@@ -85,7 +85,7 @@ Material:
     - _RefrDistort: 0.049
     - _SrcBlend: 5
     - _UVSec: 0
-    - _WaveScale: 0.049
+    - _WaveScale: 0.125
     - _ZWrite: 0
     m_Colors:
     - WaveSpeed: {r: -9, g: -4.5, b: 8, a: 3.5}
