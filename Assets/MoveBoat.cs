@@ -25,10 +25,9 @@ public class MoveBoat : MonoBehaviour {
 
     private float linearSpeed;
     private float rotationSpeed;
-    private float acceleration;
+    public float linearAcceleration;
+    public float rotationAcceleration;
 
-	public float baseAcell = 1f;
-    
     // Use this for initialization
     void Start () {
         canEnterBoat = false;
@@ -36,7 +35,6 @@ public class MoveBoat : MonoBehaviour {
         
         linearSpeed = 0.0f;
         rotationSpeed = 0.0f;
-		acceleration = baseAcell;
     }
 
     // Update is called once per frame
@@ -58,27 +56,21 @@ public class MoveBoat : MonoBehaviour {
             player.transform.position = driverSeat.transform.position;
             firstPersonCamera.transform.position = driverSeat.transform.position + CAMERA_OFFSET;
             
-			acceleration = baseAcell;
-            if (Input.GetKey(KeyCode.LeftShift))
+			if (Input.GetKey(KeyCode.D))
             {
-				acceleration = baseAcell;
-            }
-
-            if (Input.GetKey(KeyCode.D))
-            {
-                rotationSpeed += acceleration;
+                rotationSpeed += rotationAcceleration;
             }
             if (Input.GetKey(KeyCode.A))
             {
-                rotationSpeed -= acceleration;
+                rotationSpeed -= rotationAcceleration;
             }
             if (Input.GetKey(KeyCode.W))
             {
-                linearSpeed += acceleration;
+                linearSpeed += linearAcceleration;
             }
             if (Input.GetKey(KeyCode.S))
             {
-                linearSpeed -= acceleration;
+                linearSpeed -= linearAcceleration;
             }
             if (Input.GetKey(KeyCode.Q))
             {

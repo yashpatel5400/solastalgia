@@ -74,7 +74,7 @@ MonoBehaviour:
     portrait: {fileID: 0}
     alternatePortraits: []
   items:
-  - id: 1
+  - id: 2
     fields:
     - title: Name
       value: Drop Businessman
@@ -100,6 +100,82 @@ MonoBehaviour:
       value: unassigned
       type: 0
       typeString: CustomFieldType_QuestState
+    - title: Is Item
+      value: False
+      type: 2
+      typeString: CustomFieldType_Boolean
+    - title: Trackable
+      value: True
+      type: 2
+      typeString: CustomFieldType_Boolean
+    - title: Track
+      value: True
+      type: 2
+      typeString: CustomFieldType_Boolean
+  - id: 1
+    fields:
+    - title: Name
+      value: Get into boat
+      type: 0
+      typeString: 
+    - title: Pictures
+      value: '[]'
+      type: 3
+      typeString: CustomFieldType_Files
+    - title: Description
+      value: 
+      type: 0
+      typeString: 
+    - title: Success Description
+      value: 
+      type: 0
+      typeString: 
+    - title: Failure Description
+      value: 
+      type: 0
+      typeString: 
+    - title: State
+      value: unassigned
+      type: 0
+      typeString: 
+    - title: Is Item
+      value: False
+      type: 2
+      typeString: CustomFieldType_Boolean
+    - title: Trackable
+      value: True
+      type: 2
+      typeString: CustomFieldType_Boolean
+    - title: Track
+      value: True
+      type: 2
+      typeString: CustomFieldType_Boolean
+  - id: 3
+    fields:
+    - title: Name
+      value: Pick up Businessman
+      type: 0
+      typeString: 
+    - title: Pictures
+      value: '[]'
+      type: 3
+      typeString: CustomFieldType_Files
+    - title: Description
+      value: 
+      type: 0
+      typeString: 
+    - title: Success Description
+      value: 
+      type: 0
+      typeString: 
+    - title: Failure Description
+      value: 
+      type: 0
+      typeString: 
+    - title: State
+      value: unassigned
+      type: 0
+      typeString: 
     - title: Is Item
       value: False
       type: 2
@@ -391,7 +467,9 @@ MonoBehaviour:
         isConnector: 0
         priority: 2
       conditionsString: 
-      userScript: 
+      userScript: 'SetQuestState("Get into boat", "active");
+
+        SetQuestEntryState("Get into boat", 1, "active");'
       onExecute:
         m_PersistentCalls:
           m_Calls: []
@@ -939,7 +1017,9 @@ MonoBehaviour:
         isConnector: 0
         priority: 2
       conditionsString: 
-      userScript: 'SetQuestState("Drop Businessman", "active");
+      userScript: 'SetQuestState("Pick up Businessman", "success");
+
+        SetQuestState("Drop Businessman", "active");
 
         SetQuestEntryState("Drop Businessman", 1, "active");'
       onExecute:
@@ -949,7 +1029,7 @@ MonoBehaviour:
           Culture=neutral, PublicKeyToken=null
       canvasRect:
         serializedVersion: 2
-        x: 30
+        x: 32.1978
         y: 220
         width: 160
         height: 30
@@ -1090,10 +1170,10 @@ MonoBehaviour:
       canvasRect:
         serializedVersion: 2
         x: 25.8022
-        y: 321
+        y: 319.9011
         width: 160
         height: 30
-    canvasScrollPosition: {x: 51.23214, y: 54.18074}
+    canvasScrollPosition: {x: 0, y: 0}
     canvasZoom: 0.9100001
   - id: 3
     fields:
@@ -1337,7 +1417,11 @@ MonoBehaviour:
       conditionPriority: 2
       outgoingLinks: []
       conditionsString: 
-      userScript: 
+      userScript: 'SetQuestState("Get into boat", "success");
+
+        SetQuestState("Pick up Businessman", "active");
+
+        SetQuestEntryState("Pick up Businessman", 1, "active");'
       onExecute:
         m_PersistentCalls:
           m_Calls: []
