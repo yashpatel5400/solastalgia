@@ -10,6 +10,10 @@ public class MoveBoat : MonoBehaviour {
     Vector3 tempPos = new Vector3();
 
     // vector added to "get out" of the vehicle somewhat naturally
+    private float MAX_X = .25f;
+    private float MAX_Y = .25f;
+    private float MAX_Z = .25f;
+
     private Vector3 GETTING_OUT = new Vector3(0.0f, 0.0f, 0.75f);
     private Vector3 CAMERA_OFFSET = new Vector3(0.0f, 1.75f, 0.0f);
 
