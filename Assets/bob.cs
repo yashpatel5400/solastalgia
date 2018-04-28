@@ -3,8 +3,9 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class bob : MonoBehaviour {
-    public float amplitude = 0.05f;
-    public float frequency = 1f;
+    public float amplitude;
+    public float frequency;
+    public float offset;
 
     // Position Storage Variables
     Vector3 posOffset = new Vector3();
@@ -22,7 +23,7 @@ public class bob : MonoBehaviour {
     {
         // Float up/down with a Sin()
         tempPos = posOffset;
-        tempPos.y += Mathf.Sin(Time.fixedTime * Mathf.PI * frequency) * amplitude;
+        tempPos.y += Mathf.Sin(offset + Time.fixedTime * Mathf.PI * frequency) * amplitude;
 
         transform.position = tempPos;
     }
