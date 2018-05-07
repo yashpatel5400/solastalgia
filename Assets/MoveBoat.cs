@@ -84,7 +84,7 @@ public class MoveBoat : MonoBehaviour {
 
         if (canEnterBoat && !insideBoat)
         {
-            if (Input.GetKey(KeyCode.E))
+            if (Input.GetKey(KeyCode.Mouse0))
             {
                 insideBoat = true;
             }
