@@ -4,9 +4,11 @@ using UnityEngine;
 
 public class PickUp : MonoBehaviour {
 
+    public GameObject dropoffPoint;
     public GameObject passengerSeat;
     public GameObject pickupObjective;
     public GameObject objective;
+    public FaceObjective pointer;
 
     private Vector3 PASSENGER_OFFSET = new Vector3(-1.0f, 2.0f, 0.0f);
     private Vector3 DROPOFF_OFFSET = new Vector3(0.0f, -0.5f, 0.0f);
@@ -37,6 +39,7 @@ public class PickUp : MonoBehaviour {
 
         if (pickedUp)
         {
+            pointer.currentObjective = objective;
             objective.GetComponent<Renderer>().enabled = true;
             pickupObjective.GetComponent<Renderer>().enabled = false;
             npc.transform.rotation = transform.rotation;
@@ -44,10 +47,15 @@ public class PickUp : MonoBehaviour {
             if (canDropOff && dropOff != null && Input.GetKey(KeyCode.F))
             {
                 objective.GetComponent<Renderer>().enabled = false;
-                npc.transform.position = transform.position + DROPOFF_OFFSET;
+                npc.transform.position = dropoffPoint.transform.position;
                 npc = null;
                 pickedUp = false;
             }
+        }
+
+        else
+        {
+            pointer.currentObjective = pickupObjective;
         }
 	}
 

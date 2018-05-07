@@ -22,7 +22,7 @@ public class MoveBoat : MonoBehaviour {
     public Camera firstPersonCamera;
     public GameObject player;
     public GameObject driverSeat;
-
+    
     private bool canEnterBoat;
     private bool insideBoat;
 
