@@ -31,7 +31,7 @@ public class PickUp : MonoBehaviour {
 	void Update () {
         if (canPickUp && npc != null)
         {
-            if (Input.GetKey(KeyCode.F))
+            if (Input.GetKey(KeyCode.Mouse0))
             {
                 pickedUp = true;
             }
@@ -44,7 +44,7 @@ public class PickUp : MonoBehaviour {
             pickupObjective.GetComponent<Renderer>().enabled = false;
             npc.transform.rotation = transform.rotation;
             npc.transform.position = passengerSeat.transform.position;
-            if (canDropOff && dropOff != null && Input.GetKey(KeyCode.F))
+            if (canDropOff && dropOff != null && Input.GetKey(KeyCode.Mouse0))
             {
                 objective.GetComponent<Renderer>().enabled = false;
                 npc.transform.position = dropoffPoint.transform.position;
