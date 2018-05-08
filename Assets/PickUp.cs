@@ -65,11 +65,12 @@ public class PickUp : MonoBehaviour {
                 canPickUp = true;
                 npc = other.gameObject;
             }
-            if (other.CompareTag("Objective"))
-            {
-                canDropOff = true;
-                dropOff = other.gameObject;
-            }
+        }
+
+        if (other.CompareTag("Objective"))
+        {
+            canDropOff = true;
+            dropOff = other.gameObject;
         }
     }
 
@@ -82,11 +83,12 @@ public class PickUp : MonoBehaviour {
                 canPickUp = false;
                 npc = null;
             }
-            if (other.CompareTag("Objective"))
-            {
-                canDropOff = false;
-                dropOff = null;
-            }
+        }
+
+        if (other.CompareTag("Objective"))
+        {
+            canDropOff = false;
+            dropOff = null;
         }
     }
 }
