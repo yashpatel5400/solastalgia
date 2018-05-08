@@ -19,6 +19,13 @@ public class CameraChange : MonoBehaviour {
 
     IEnumerator animator()
     {
+        GameObject[] minimapObjects = GameObject.FindGameObjectsWithTag("Minimap");
+
+        foreach (GameObject minimapObject in minimapObjects)
+        {
+            minimapObject.SetActive(false);
+        }
+
         animationCamera.GetComponent<Camera>().enabled = true;
         fpsCamera.GetComponent<Camera>().enabled = false;
         minimapCamera.GetComponent<Camera>().enabled = false;
@@ -31,6 +38,11 @@ public class CameraChange : MonoBehaviour {
         fpsCamera.GetComponent<Camera>().enabled = true;
         minimapCamera.GetComponent<Camera>().enabled = true;
 
+        foreach (GameObject minimapObject in minimapObjects)
+        {
+            minimapObject.SetActive(true);
+        }
+
         ignored.SetActive(true);
     }
 
@@ -42,6 +54,6 @@ public class CameraChange : MonoBehaviour {
 
     void OnTriggerEnter(Collider other)
     {
-        Debug.Log(other.gameObject.name);
+        
     }
 }
