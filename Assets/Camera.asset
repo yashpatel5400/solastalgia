@@ -121,26 +121,26 @@ MonoBehaviour:
         neutralWhiteClip: 10
       basic:
         postExposure: 0
-        temperature: -5
+        temperature: 0
         tint: 0
-        hueShift: 10
-        saturation: 0.75
-        contrast: 1.25
+        hueShift: 0
+        saturation: 1
+        contrast: 1
       channelMixer:
         red: {x: 1, y: 0, z: 0}
         green: {x: 0, y: 1, z: 0}
         blue: {x: 0, y: 0, z: 1}
-        currentEditingChannel: 2
+        currentEditingChannel: 0
       colorWheels:
-        mode: 1
+        mode: 0
         log:
           slope: {r: 1, g: 1, b: 1, a: 0}
           power: {r: 1, g: 1, b: 1, a: 0}
           offset: {r: 1, g: 1, b: 1, a: 0}
         linear:
-          lift: {r: 0, g: 0, b: 0, a: 0}
-          gamma: {r: 0, g: 0, b: 0, a: 0}
-          gain: {r: 0, g: 0, b: 0, a: 0}
+          lift: {r: 0.7774002, g: 0.8184142, b: 1, a: 0}
+          gamma: {r: 1, g: 0.6566626, b: 0.54690397, a: 0}
+          gain: {r: 0.69706196, g: 0.87743926, b: 1, a: 0}
       curves:
         master:
           curve:
@@ -263,14 +263,26 @@ MonoBehaviour:
         lumVSsat:
           curve:
             serializedVersion: 2
-            m_Curve: []
+            m_Curve:
+            - serializedVersion: 2
+              time: 0.33632287
+              value: 0.3333333
+              inSlope: 0
+              outSlope: 0
+              tangentMode: 0
+            - serializedVersion: 2
+              time: 0.6460905
+              value: 0.63392854
+              inSlope: 0
+              outSlope: 0
+              tangentMode: 0
             m_PreInfinity: 2
             m_PostInfinity: 2
-            m_RotationOrder: 4
+            m_RotationOrder: 0
           m_Loop: 0
           m_ZeroValue: 0.5
           m_Range: 1
-        e_CurrentEditingCurve: 0
+        e_CurrentEditingCurve: 4
         e_CurveY: 1
         e_CurveR: 0
         e_CurveG: 0
@@ -289,9 +301,9 @@ MonoBehaviour:
     m_Enabled: 1
     m_Settings:
       colored: 0
-      intensity: 0.8
-      size: 1.2
-      luminanceContribution: 0.8
+      intensity: 0.21
+      size: 0.63
+      luminanceContribution: 0.092
   vignette:
     m_Enabled: 0
     m_Settings:
