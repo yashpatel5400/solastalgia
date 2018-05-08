@@ -1775,7 +1775,7 @@ MonoBehaviour:
         type: 0
         typeString: CustomFieldType_Text
       - title: Sequence
-        value: AudioWait(motor-boat)
+        value: AudioWait(opening)
         type: 0
         typeString: CustomFieldType_Text
       conversationID: 5
