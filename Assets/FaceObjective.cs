@@ -13,7 +13,8 @@ public class FaceObjective : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-        transform.LookAt(currentObjective.transform);
-
+        var lookPos = currentObjective.transform.position - transform.position;
+        lookPos.y = 0;
+        transform.rotation = Quaternion.LookRotation(lookPos);
     }
 }
