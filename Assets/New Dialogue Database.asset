@@ -1767,7 +1767,7 @@ MonoBehaviour:
         type: 0
         typeString: CustomFieldType_Text
       - title: Audio Files
-        value: '[SoundEffects/motor-boat.wav]'
+        value: '[]'
         type: 3
         typeString: CustomFieldType_Files
       - title: Video File
@@ -1775,7 +1775,7 @@ MonoBehaviour:
         type: 0
         typeString: CustomFieldType_Text
       - title: Sequence
-        value: 
+        value: AudioWait(motor-boat)
         type: 0
         typeString: CustomFieldType_Text
       conversationID: 5
@@ -1801,8 +1801,8 @@ MonoBehaviour:
           Culture=neutral, PublicKeyToken=null
       canvasRect:
         serializedVersion: 2
-        x: 30
-        y: 70
+        x: 31.287003
+        y: 68.713
         width: 160
         height: 30
     - id: 2
