@@ -22,7 +22,9 @@ public class MoveBoat : MonoBehaviour {
     public Camera firstPersonCamera;
     public GameObject player;
     public GameObject driverSeat;
-    
+    public GameObject pickupObjective;
+    public FaceObjective pointer;
+
     private bool canEnterBoat;
     private bool insideBoat;
 
@@ -87,6 +89,7 @@ public class MoveBoat : MonoBehaviour {
             if (Input.GetKey(KeyCode.Mouse0))
             {
                 insideBoat = true;
+                pointer.currentObjective = pickupObjective;
             }
         }
 
