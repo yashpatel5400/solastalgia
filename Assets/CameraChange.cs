@@ -8,6 +8,8 @@ public class CameraChange : MonoBehaviour {
     public Camera animationCamera;
     public Camera fpsCamera;
     public Camera minimapCamera;
+    public Camera pointerCamera;
+    public Canvas minimap;
 
     public GameObject ignored;
 
@@ -29,6 +31,8 @@ public class CameraChange : MonoBehaviour {
         fpsCamera.enabled = false;
         fpsCamera.GetComponent<AudioListener>().enabled = false;
         minimapCamera.enabled = false;
+        pointerCamera.enabled = false;
+        minimap.enabled = false;
 
         ignored.SetActive(false);
 
@@ -38,6 +42,8 @@ public class CameraChange : MonoBehaviour {
         fpsCamera.GetComponent<AudioListener>().enabled = true;
         fpsCamera.enabled = true;
         minimapCamera.enabled = true;
+        pointerCamera.enabled = true;
+        minimap.enabled = true;
 
         foreach (GameObject minimapObject in minimapObjects)
         {
