@@ -17,6 +17,8 @@ public class ResetScript : MonoBehaviour {
 		} else {
 			Destroy(gameObject);
 		}
+
+
 	}
 	
 	// Update is called once per frame
@@ -26,9 +28,17 @@ public class ResetScript : MonoBehaviour {
 		if(Input.GetKeyDown(KeyCode.R)){
 			SceneManager.LoadScene(0);	
 
-			Cursor.visible = showCursor;
+//			Destroy(GameObject.Find("Dialogue Manager"));
 
-			Debug.Log("Cursor.visible: " + Cursor.visible);
+			Invoke("ToggleCursor", 0.25f);
+//			ToggleCursor();
 		}
+	}
+
+	void ToggleCursor(){
+		Cursor.visible = showCursor;
+
+		Debug.Log("Cursor.visible: " + Cursor.visible);
+		Debug.Log(Cursor.lockState = CursorLockMode.None);
 	}
 }
