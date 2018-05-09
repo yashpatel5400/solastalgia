@@ -27,6 +27,7 @@ public class CameraChange : MonoBehaviour {
         }
         animationCamera.enabled = true;
         fpsCamera.enabled = false;
+        fpsCamera.GetComponent<AudioListener>().enabled = false;
         minimapCamera.enabled = false;
 
         ignored.SetActive(false);
@@ -34,6 +35,7 @@ public class CameraChange : MonoBehaviour {
         yield return new WaitForSeconds(animationTime);
 
         animationCamera.enabled = false;
+        fpsCamera.GetComponent<AudioListener>().enabled = true;
         fpsCamera.enabled = true;
         minimapCamera.enabled = true;
 
