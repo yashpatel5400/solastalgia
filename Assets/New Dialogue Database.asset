@@ -1722,8 +1722,8 @@ MonoBehaviour:
         type: 0
         typeString: 
       - title: Dialogue Text
-        value: God, I hate when they want to talk. Should I be offended by "lower
-          story"?
+        value: '[Inner] God, I hate when they want to talk. Should I be offended by
+          "lower story"?'
         type: 0
         typeString: 
       - title: Parenthetical
@@ -2020,8 +2020,8 @@ MonoBehaviour:
         type: 0
         typeString: 
       - title: Dialogue Text
-        value: Climate conferences only keep things from getting worse. And they haven't
-          even done that. Things get worse everyday.
+        value: '[Inner] Climate conferences only keep things from getting worse. And
+          they haven''t even done that. Things get worse everyday.'
         type: 0
         typeString: 
       - title: Parenthetical
@@ -2169,7 +2169,7 @@ MonoBehaviour:
         type: 0
         typeString: 
       - title: Dialogue Text
-        value: Ha, so probably not the fruit vendor boats.
+        value: '[Inner] Ha, so probably not the fruit vendor boats.'
         type: 0
         typeString: 
       - title: Parenthetical
@@ -2316,9 +2316,9 @@ MonoBehaviour:
         type: 0
         typeString: 
       - title: Dialogue Text
-        value: What a waste of time. The world's wealthy meeting to recognize how
-          good they are at pitying the poor. What's the last accord where any country
-          actually met its emission cuts?
+        value: '[Inner] What a waste of time. The world''s wealthy meeting to recognize
+          how good they are at pitying the poor. What''s the last accord where any
+          country actually met its emission cuts?'
         type: 0
         typeString: 
       - title: Parenthetical
@@ -2581,8 +2581,8 @@ MonoBehaviour:
         y: 104.781296
         width: 160
         height: 30
-    canvasScrollPosition: {x: 0, y: 376.20654}
-    canvasZoom: 0.7900002
+    canvasScrollPosition: {x: 0, y: 419.72476}
+    canvasZoom: 0.7000003
   - id: 7
     fields:
     - title: Title
