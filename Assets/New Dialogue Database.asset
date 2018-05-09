@@ -3054,7 +3054,7 @@ MonoBehaviour:
         type: 0
         typeString: 
       - title: Dialogue Text
-        value: Grandma always talked about coming to new york, but now look at it...
+        value: Grandma always talked about coming to New York, but now look at it...
           why did I even bother to come?
         type: 0
         typeString: 
@@ -3091,8 +3091,8 @@ MonoBehaviour:
           Culture=neutral, PublicKeyToken=null
       canvasRect:
         serializedVersion: 2
-        x: 30
-        y: 70
+        x: 31
+        y: 69
         width: 160
         height: 30
     canvasScrollPosition: {x: 0, y: 0}
@@ -3238,7 +3238,7 @@ MonoBehaviour:
         type: 0
         typeString: 
       - title: Dialogue Text
-        value: Can you believe shelly?  She asked if she could stay at my house for
+        value: Can you believe Shelly?  She asked if she could stay at my house for
           a few nights while her parents found a new place to live.
         type: 0
         typeString: 
