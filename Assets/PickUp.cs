@@ -9,6 +9,9 @@ public class PickUp : MonoBehaviour {
     public GameObject pickupPointer;
     public GameObject dropoffPointer;
 
+    public GameObject pickupMinimap;
+    public GameObject dropoffMinimap;
+
     public FaceObjective pointer;
 
     private Vector3 PASSENGER_OFFSET = new Vector3(-1.0f, 2.0f, 0.0f);
@@ -44,11 +47,15 @@ public class PickUp : MonoBehaviour {
             pickupPointer.SetActive(false);
             dropoffPointer.SetActive(true);
 
+            pickupMinimap.SetActive(false);
+            dropoffMinimap.SetActive(true);
+
             npc.transform.rotation = transform.rotation;
             npc.transform.position = passengerSeat.transform.position;
             if (canDropOff && dropOff != null && Input.GetKey(KeyCode.Mouse0))
             {
                 dropoffPointer.SetActive(false);
+                dropoffMinimap.SetActive(false);
                 npc.transform.position = dropoffPoint.transform.position;
                 npc = null;
                 pickedUp = false;
