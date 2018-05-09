@@ -25,18 +25,17 @@ public class CameraChange : MonoBehaviour {
         {
             minimapObject.SetActive(false);
         }
-
-        animationCamera.GetComponent<Camera>().enabled = true;
-        fpsCamera.GetComponent<Camera>().enabled = false;
-        minimapCamera.GetComponent<Camera>().enabled = false;
+        animationCamera.enabled = true;
+        fpsCamera.enabled = false;
+        minimapCamera.enabled = false;
 
         ignored.SetActive(false);
 
         yield return new WaitForSeconds(animationTime);
 
-        animationCamera.GetComponent<Camera>().enabled = false;
-        fpsCamera.GetComponent<Camera>().enabled = true;
-        minimapCamera.GetComponent<Camera>().enabled = true;
+        animationCamera.enabled = false;
+        fpsCamera.enabled = true;
+        minimapCamera.enabled = true;
 
         foreach (GameObject minimapObject in minimapObjects)
         {
